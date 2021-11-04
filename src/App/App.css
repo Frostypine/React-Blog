@@ -1,3 +1,7 @@
 .App-header {
-display: flex;
+}
+
+.linkIndex{
+    display: flex;
+    padding-right: 10rem;
 }
