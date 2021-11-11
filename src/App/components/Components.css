@@ -1,0 +1,30 @@
+.page,.App-header, .card,.pageIndex {background-image: url('../Images/paper.png');}
+.pageIndex {
+    width: 12rem;
+    display: block;
+    
+}
+
+.page{
+    width: 10rem;
+     height: 10rem;}
+/* .pageIndex {color: wheat;}
+.pageIndex:link {color: wheat;} */
+header, div,  .linkIndex {
+    justify-content: space-between;
+    flex: center; 
+    /* text-align: center; */
+ 
+}
+Nav.tabs.Link.active {background-color: green;}
+.navTabs.active  {background-color: green;}
+.nav-link.active{background-color: green;}
+header {}
+
+.card {}
+.placeholdertext{color: wheat;}
+
+.linkIndex,.blogTitle{
+    text-align: center;
+    width: auto; display: block }
+     .blog-list{ width: 10rem; display: block }

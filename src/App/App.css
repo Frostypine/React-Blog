@@ -1,7 +1,16 @@
-.App-header {
+.App {
+    
 }
 
+body {
+   /* background-image: url('./Images/paper.png'); */
+   background-image: url('./Images/bookshelves.jpg');
+}
 .linkIndex{
     display: flex;
     padding-right: 10rem;
+}
+
+ul {
+  list-style-type:none; 
 }
