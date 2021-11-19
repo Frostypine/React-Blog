@@ -1,15 +1,15 @@
 import './Components.css';
 const Contact = () => { return (
-<form>
-<p className = "placeholdertext"> this is contact </p>
+<form className = "mx-auto form placeholdertext">
+<h3 className = "placeholdertext">Contact </h3>
 <label> 
     email:
-<input/>
+<input className ="email-box"  />
 </label>
 <br />
 <label> 
     message: 
-<input/>
+<input className ="message-box" />
 </label>
 <br />
 <button>Submit</button>

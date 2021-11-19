@@ -4,6 +4,16 @@
     display: block;
     
 }
+.form{
+    width: 12rem;
+    display: block;
+    
+}
+
+.message-box{
+    width: 15rem;
+    height: 8rem;
+}
 
 .page{
     width: 10rem;
