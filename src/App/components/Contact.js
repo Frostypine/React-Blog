@@ -13,7 +13,11 @@ const Contact = () => { return (
 </label>
 <br />
 <button>Submit</button>
+
+   <br/>
+    <br/>
 </form>
+
 ); }
 
 export default Contact; 

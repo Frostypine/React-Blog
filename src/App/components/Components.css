@@ -1,4 +1,10 @@
-.page,.App-header, .card,.pageIndex {background-image: url('../Images/paper.png');}
+footer {
+    background-image: url('../Images/paper.png');
+}
+
+.page,.App-header, .card,.pageIndex {
+    background-image: url('../Images/paper.png');
+}
 .pageIndex {
     width: 12rem;
     display: block;

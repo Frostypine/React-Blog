@@ -7,7 +7,9 @@ const Home = () => {
   return (
     <div >    
       {/* <p className = "placeholdertext">home</p> */}
-        <DataList props={info} />                 
+        <DataList props={info} />    
+        <br/>
+        <br/>   
     </div>
   );
 }

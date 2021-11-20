@@ -11,7 +11,21 @@ import cal from '../Images/d-aur2.png';
 import {Container, Row, Col} from 'react-bootstrap'; 
 const About = () => { return (
 <div className="about"> 
-   <p className = "placeholdertext">this is about</p>
+
+  <br/>
+   <Card className="mx-auto blog-list "
+   style={{ width: '11rem'}}>
+  {/* <Card.Img variant="top" src={pine} /> */}
+  <Card.Body>
+    <Card.Title>Card Title</Card.Title>
+    <Card.Text>
+      example text 
+    </Card.Text>
+  </Card.Body>
+</Card>
+
+<br/>
+   {/* <p className = "placeholdertext">this is about</p> */}
 <CardGroup>
    <Card style={{ width: '11rem'}}>
   <Card.Img variant="top" src={pine} />
@@ -22,6 +36,7 @@ const About = () => { return (
     </Card.Text>
   </Card.Body>
 </Card>
+
 <Card style={{ width: '10rem'}}>
   <Card.Img variant="top" src={wiz} />
   <Card.Body>
@@ -60,7 +75,8 @@ const About = () => { return (
       </Row>
    </Container> */}
 
-
+<br/>
+<br/>
 
 </div>); }
 

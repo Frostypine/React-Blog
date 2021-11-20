@@ -23,7 +23,8 @@ const DataList = ( {props}) => {
     </Card.Text>
     <Card.Link href="#">more</Card.Link>
   </Card.Body>
-</Card>                        
+</Card>          
+<br/>              
                 </div>
    
             ))}    
