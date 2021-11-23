@@ -1,83 +1,71 @@
-
 import './Components.css';
-import {Card, CardGroup} from 'react-bootstrap'; 
-import cpine from '../Images/c-aur.png';
-import cwiz from '../Images/c-aur1.png';
-import ccal from '../Images/c-aur2.png';
-import pine from '../Images/d-aur.png';
-import wiz from '../Images/d-aur1.png';
-import cal from '../Images/d-aur2.png';
+import { Card, CardGroup } from 'react-bootstrap';
+import { useState } from 'react';
+import info from './data';
 
-import {Container, Row, Col} from 'react-bootstrap'; 
-const About = () => { return (
-<div className="about"> 
+//import {Container, Row, Col} from 'react-bootstrap';
 
-  <br/>
-   <Card className="mx-auto blog-list "
-   style={{ width: '11rem'}}>
-  {/* <Card.Img variant="top" src={pine} /> */}
-  <Card.Body>
-    <Card.Title>Card Title</Card.Title>
-    <Card.Text>
-      example text 
-    </Card.Text>
-  </Card.Body>
-</Card>
 
-<br/>
-   {/* <p className = "placeholdertext">this is about</p> */}
-<CardGroup>
-   <Card style={{ width: '11rem'}}>
-  <Card.Img variant="top" src={pine} />
-  <Card.Body>
-    <Card.Title>Card Title</Card.Title>
-    <Card.Text>
-      example text 
-    </Card.Text>
-  </Card.Body>
-</Card>
+const About = () => {
+  const [author, setAuthor] = useState();
+  const [bio, setBio] = useState();
+  const [image, setImage] = useState();
 
-<Card style={{ width: '10rem'}}>
-  <Card.Img variant="top" src={wiz} />
-  <Card.Body>
-    <Card.Title>Card Title</Card.Title>
-    <Card.Text>
-      example text 
-    </Card.Text>
-  </Card.Body>
-</Card>
+  const handleClick = (blogAuthor, blogBio, blogImg) => {
+    setAuthor(blogAuthor);
+    setBio(blogBio);
+    setImage(blogImg); 
+  }
 
-<Card style={{ width: '11rem'}}>
-  <Card.Img variant="top" src={cal} />
-  <Card.Body>
-    <Card.Title>Card Title</Card.Title>
-    <Card.Text>
-      example text 
-    </Card.Text>
-  </Card.Body>
-</Card>
-</CardGroup>
-   {/* 
-     <img src={pine} alt = "pine icon" /> 
-   <img src={wiz} alt = "wizard hat" />
-   <img src={cal} alt = "witch cauldron" />
-   
-   <Container>
-      <Row>
-        <Col></Col>
-        <Col>select target</Col>
-        <Col></Col>
-      </Row>
-      <Row>
-      <Col><img src={pine} alt = "pine icon" /> </Col>
-        <Col><img src={wiz} alt = "wizard hat" /></Col>
-        <Col><img src={cal} alt = "witch cauldron" /></Col>
-      </Row>
-   </Container> */}
+  return (
+    <div className="about">
 
-<br/>
-<br/>
+      <br />
+      <Card className="mx-auto blog-list "
+        style={{ height: '27rem', width: '15rem' }}>
+         <Card.Img variant="top" src={image}    style={{ height: '18rem', width: '15rem' }}   />
+        <Card.Body>
+          <Card.Title>{author}</Card.Title>
+          <Card.Text>
+           {bio}
+          </Card.Text>
+        </Card.Body>
+      </Card>
+      <br />
+      <br />
+      <br />
+      <br />
+  
+      {/* <p className = "placeholdertext">this is about</p> */}
 
-</div>); }
+      <CardGroup>
+        {info.map((blog, i) => {
 
-export default About; 
+          return (
+            <Card
+              key={i}
+              style={{ width: '10rem' }}
+              onClick={ () =>  handleClick(blog.author, blog.bio, blog.clkImg)}>
+
+              <Card.Img variant="top" src={blog.img} />
+              <Card.Body >
+                <Card.Title>{blog.author}</Card.Title>
+                <Card.Text>
+                  {blog.body}
+                </Card.Text>
+           
+              </Card.Body>
+            </Card>
+          );
+        })}
+
+      </CardGroup>
+
+
+      <br />
+      <br />
+
+    </div>);
+}
+
+export default About;

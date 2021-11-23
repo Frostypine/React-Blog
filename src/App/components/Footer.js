@@ -1,11 +1,12 @@
 import './Components.css';
 import {  Link } from 'react-router-dom';
-import {Nav} from 'react-bootstrap'; 
+import ANav from  './ANav';
 
 const Footer = () => { return (
-<footer>
+<footer className="footer">
     <br/>
     <br/>
+ <ANav/>
       </footer>); }
 
 export default Footer; 

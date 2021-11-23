@@ -1,5 +1,6 @@
-footer {
+.footer {
     background-image: url('../Images/paper.png');
+    height: 6rem;
 }
 
 .page,.App-header, .card,.pageIndex {
