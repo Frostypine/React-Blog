@@ -10,9 +10,10 @@ const Page2 = () => { return (
    image={info[1].art} 
    title={info[1].title} 
    author={info[1].author} 
+   art={info[1].clkImg}
    date={info[1].date} 
    />     
-<Page2Text  post={info[0].post}  /> 
+<Page2Text  post={info[1].post}  /> 
 
     <br/><br/><br/><br/>
     </div>);

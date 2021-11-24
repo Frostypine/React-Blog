@@ -1,7 +1,7 @@
 import './Components.css';
 
 const Page3Text = ({post}) => { return (
-    <div>
+    <div className="page-text">
         <p>
           {post}  
       </p>

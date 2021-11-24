@@ -10,6 +10,7 @@ const Page1 = () => { return (
    image={info[0].art} 
    title={info[0].title} 
    author={info[0].author} 
+   art={info[0].clkImg}
    date={info[0].date} 
    />     
 <Page1Text  post={info[0].post}  />

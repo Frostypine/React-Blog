@@ -1,3 +1,22 @@
+.admin-button{
+    background-color: white;
+    position: relative;
+    top: 4rem; 
+    left: 0rem; 
+    border-width: 0;
+}
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.author-card{    
+    color: white;
+    background-color: black;
+    opacity: 0.7;
+
+}
+
 .blog-image {
     height: 40rem;
     width: 50rem;
@@ -28,13 +47,36 @@ a:active { text-decoration: none; }
 }
 
 
-
-.cardTitle, .blog-preview, Link {
-    color: wheat;
+.cardTitle, Link{
+    color: lightgreen;
     text-decoration: none; 
 -webkit-text-stroke-width: 1px;
- -webkit-text-stroke-color: purple; 
+ -webkit-text-stroke-color: blue; 
+}
+.blog-date{
+    color: red;
+    text-decoration: none; 
+-webkit-text-stroke-width: .5px;
+ -webkit-text-stroke-color: orange;
+}
+
+.blog-summary {
+    color: darkblue; 
+    text-decoration: none; 
+-webkit-text-stroke-width: .45px;
+ -webkit-text-stroke-color:rgb(182, 255, 182);
 } 
+
+ .blog-author  {
+    color:rgb(255, 20, 255);
+    text-decoration: none; 
+-webkit-text-stroke-width: 1px;
+ -webkit-text-stroke-color: blue;
+} 
+
+
+
+
 .mb-2{ color: rgb(0, 238, 255);
     -webkit-text-stroke-width: 1px;
 -webkit-text-stroke-color: rgb(1, 69, 255);
@@ -49,17 +91,18 @@ a:active { text-decoration: none; }
     left: -5rem; 
     background-image: url('../Images/paper.png');
     text-align: center;
+    
 }
 
 
 .cardsImg{
-    opacity: 100%;
+    opacity:  0.65; 
     text-align: center;
     position: relative;
     left: 5rem; 
 } 
 
-.cardImg:hover {
+.cardsImg:hover {
     outline: #333 solid 4px;
 }
 .caro {
@@ -75,7 +118,8 @@ a:active { text-decoration: none; }
 
 .page-list{
     position: relative;
-    left: 11rem; 
+    left: 8rem; 
+    top: 1rem; 
 }
 .contact-form{
    left: 23rem;
@@ -104,6 +148,7 @@ a:active { text-decoration: none; }
 .message-box{
     width: 18rem;
     height: 8rem;
+    
 }
 textarea{background-color: rgb(0, 0, 0);}
 
@@ -131,11 +176,14 @@ header, div,  .linkIndex {
 .nav-link.active{background-color: green;} */
 header {}
 
-.card {}
+.cardi:hover {
+    outline: rgb(213, 255, 208) solid 4px;
+}
 
-.placeholdertext{color: wheat;
+.placeholdertext{
+color: rgb(160, 104, 0);
 -webkit-text-stroke-width: 1px;
--webkit-text-stroke-color: rgb(0, 175, 67);
+-webkit-text-stroke-color: black;
 }
 
 .linkIndex,.blogTitle{

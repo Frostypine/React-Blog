@@ -7,11 +7,13 @@ const Footer = () => {
         <footer className="footer">
             <br />
             <br />
-            <ANav />
+            <ANav /> 
+            <button className="admin-button">Admin</button>
             <br />
             <br />
             <br />
             <br />
+           
         </footer>);
 }
 
