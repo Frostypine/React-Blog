@@ -1,19 +1,33 @@
+import info from './data';
+import { Link } from 'react-router-dom';
 
-import {  Link } from 'react-router-dom';
+const PageIndex = () => {
+    return (
+        <>
+            <div className="mx-auto pageIndex">
 
-const PageIndex = () => { return(
-    <div className="mx-auto pageIndex">
-  
-    <ul> 
-    <li> <h5> Index:</h5> </li>
-    <li><Link to='/page1'>Magic Creature Types</Link></li>
-    <li><Link to='/page2'>Magic Object Types</Link></li>
-    <li><Link to='/page3'>Magic User Types</Link></li>
-    <li><Link to='/page4'>Magic of Holidays</Link></li>
-    </ul>
-   </div>
-   );
-  
+                <ul>
+                    <li> <h3> Index:</h3> </li>
+                    <li><Link to={info[0].link}>{info[0].title}</Link></li>
+                    <li><Link to={info[1].link}>{info[1].title}</Link></li>
+                    <li><Link to={info[2].link}>{info[2].title}</Link></li>
+                </ul>
+                <br />
+                <br />
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        </>
+    );
+
 }
 
-export default PageIndex; 
+export default PageIndex;

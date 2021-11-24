@@ -6,7 +6,7 @@ const ANav = () => { return (
     <header className= "mx-auto linkIndex">
     <Nav variant="tabs" defaultActiveKey="/home" horizontal>
   <Nav.Item>
-    <Nav.Link href="/home"><Link to='/home'>Home</Link></Nav.Link>
+    <Nav.Link href="/home" ><Link to='/'>Home</Link></Nav.Link>
   </Nav.Item>
   <Nav.Item>
     <Nav.Link eventKey="/about" ><Link to='/about'>About</Link></Nav.Link>
@@ -22,14 +22,15 @@ const ANav = () => { return (
     </Nav.Link>
   </Nav.Item>
 </Nav>
-     
+
      
      {/* <nav> <Link to='/home'>Home|</Link>
       <Link to='/about'>About|</Link>
       <Link to='/contact'>Contact|</Link>
       <Link to='/index'>Index</Link>
     </nav> */}
-    
+            <br />
+        
   </header>
 
 ); 

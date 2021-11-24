@@ -1,46 +1,60 @@
 import './Components.css';
 import Carousel from 'react-bootstrap/Carousel'
+import info from './data';
+
+import img1 from '../Images/img1.jfif';
+import img2 from '../Images/img2.jfif';
+import img3 from '../Images/img3.jpg';
+
+const ACaro = () => { 
+  
+    //  {info.map((blog, i) => {}
+    return (
 
 
-const ACaro = () => { return (<>
-<Carousel>
+<div className="mx-auto caro" /*key={i}*/>
+<Carousel className="mx-auto caro" style={{ height: '40rem', width: '60rem' }}>
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="holder.js/800x400?text=First slide&bg=373940"
-      alt="First slide"
+      src={img1}
+      alt="Holiday"
+      style={{ height: '40rem', width: '60rem' }}
+      
     />
     <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <h3></h3>
+      <p></p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="holder.js/800x400?text=Second slide&bg=282c34"
-      alt="Second slide"
+      src={img2}
+      alt="Magic Tools"
+      style={{ height: '40rem', width: '60rem' }}
     />
 
     <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h3></h3>
+      <p></p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="holder.js/800x400?text=Third slide&bg=20232a"
-      alt="Third slide"
+      src={img3}
+      alt="Magic Creature"
+      style={{ height: '40rem', width: '60rem' }}
     />
 
     <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <h3></h3>
+      <p></p>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
 
-</>); }
+</div>); }
 
 export default ACaro; 

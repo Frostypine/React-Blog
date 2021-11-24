@@ -1,61 +1,69 @@
 import './Components.css';
-import {  Modal, Container} from 'react-bootstrap'
-import React, { useState, useEffect} from 'react'
+import { Modal, Container, Form } from 'react-bootstrap'
+import React,  { useState, useEffect } from 'react'
+
+
+const SubmitModal = () => {
   //for the modal
-
-
-  const SubmitModal  = () => {
-    const handleClose = () => setShow(false);
-
-        //for the modal
   const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-    return (
-    
 
-        <Container >
-        <Modal  show={show} onHide={handleClose}>
+  return (
+    <>
+
+      <Container >
+        <Modal show={show} onHide={handleClose}>
           <Modal.Header className="bg-dark text-white p-3" closeButton>
-            <Modal.Title >Alert</Modal.Title>
-           Thank you, your message was submitted successfully!  
+            <div>  Thank you,  </div>  <div>your message was submitted successfully!  </div>
           </Modal.Header>
-            
+
         </Modal>
-        </Container>
+      </Container>
+      <button className="mx-auto form" onClick={handleShow} >Submit</button>
+    </>
+  );
 
-        ); 
-  }
+}
 
-const Contact = () => { return (
+const Contact = () => {
 
-  
-
-<form className = "mx-auto form placeholdertext">
-<h3 className = "placeholdertext">Contact </h3>
-<label> 
-    email:
-<input className ="email-box"  />
-</label>
-<br />
-<label> 
-    message: 
-<input className ="message-box bg-light m-1 text-secondary" size="lg" type="text" as="textarea" placeholder="description" name="description"  />
-</label>
-<br />
-<button>Submit</button>
-
-   <br/>
-    <br/>
-</form>
-
-); }
+  return (
+    <>
+<Form>
+  <Form.Group className="mx-auto mb-3 message-box" controlId="exampleForm.ControlInput1">
+    <Form.Label>
+    <h3 className="mx-auto placeholdertext email-box"> Email: </h3>
+      </Form.Label>
+    <Form.Control type="email" placeholder="name@example.com" />
+  </Form.Group>
+  <Form.Group className="mx-auto mb-3 message-box" controlId="exampleForm.ControlTextarea1">
+    <Form.Label><h3 className="placeholdertext ">Message:</h3></Form.Label>
+    <Form.Control as="textarea" rows={3} />
+  </Form.Group>
+</Form>
+        <br />
 
 
 
+    
+      <SubmitModal />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </>
+  );
+}
 
 
-export default Contact; 
+
+
+
+export default Contact;
 
 
 

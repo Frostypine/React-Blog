@@ -1,15 +1,62 @@
+.blog-image {
+    height: 40rem;
+    width: 50rem;
+    left: -3rem; 
+    position: relative;
+}
+.blog-title{
+    text-decoration: underline;
+    font-size: 4rem;
+}
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:active { text-decoration: none; }
+
+.cardTitle, .blog-preview, Link {
+    color: wheat;
+    text-decoration: none; 
+-webkit-text-stroke-width: 1px;
+ -webkit-text-stroke-color: blueviolet; 
+} 
+.mb-2{ color: rgb(0, 238, 255);
+    -webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: rgb(1, 69, 255);
+}
+
+.imgBox{
+    background-color: black;
+     opacity: 0.7; 
+}
+.cards{}
+
+.cardImg{
+    opacity: 100%;
+    text-align: center;
+} 
+
+.cardImg:hover {
+    outline: #333 solid 4px;
+}
+.caro {
+    height: auto;
+    color: wheat;
+}
 .footer {
     background-image: url('../Images/paper.png');
-    height: 6rem;
+    height: 15rem;
+    z-index:0;
 }
 
 .page,.App-header, .card,.pageIndex {
     background-image: url('../Images/paper.png');
+    z-index:0;
 }
 .pageIndex {
-    width: 12rem;
+    width: 40rem;
     display: block;
-    
+    left: 3rem; 
+    font-size: 1.5rem;
 }
 .form{
     width: 12rem;
@@ -18,13 +65,22 @@
 }
 
 .message-box{
-    width: 15rem;
+    width: 18rem;
     height: 8rem;
 }
+textarea{background-color: rgb(0, 0, 0);}
 
 .page{
-    width: 10rem;
-     height: 10rem;}
+    width: 45rem;
+     height: 120rem;
+    padding-bottom: 10rem;
+    text-align: center;
+}
+.page-text{
+    text-align: left;
+    padding-left: 2rem;
+    font-size: 1.5rem;
+}
 /* .pageIndex {color: wheat;}
 .pageIndex:link {color: wheat;} */
 header, div,  .linkIndex {
@@ -33,15 +89,21 @@ header, div,  .linkIndex {
     /* text-align: center; */
  
 }
-Nav.tabs.Link.active {background-color: green;}
+/* Nav.tabs.Link.active {background-color: green;}
 .navTabs.active  {background-color: green;}
-.nav-link.active{background-color: green;}
+.nav-link.active{background-color: green;} */
 header {}
 
 .card {}
-.placeholdertext{color: wheat;}
+
+.placeholdertext{color: wheat;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: rgb(0, 175, 67);
+}
 
 .linkIndex,.blogTitle{
     text-align: center;
-    width: auto; display: block }
+    width: auto; display: block;
+    padding-bottom: 2rem;
+ }
      .blog-list{ width: 10rem; display: block }
