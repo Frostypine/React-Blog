@@ -20,10 +20,10 @@ const About = () => {
   }
 
   return (
-    <div className="about">
+    <div className="about mx-auto ">
 
       <br />
-      <Card className="mx-auto blog-list "
+      <Card className="mx-auto aCard "
         style={{ height: '30rem', width: '18rem' }}>
           <div className="imgBox" style={{ height: '18rem', width: '18rem' }}>
          <Card.Img className="cardImg"variant="top" src={image}    style={{ height: '18rem', width: '18rem' }}   />
@@ -43,18 +43,18 @@ const About = () => {
   
       {/* <p className = "placeholdertext">this is about</p> */}
 
-      <CardGroup >
+      <CardGroup className="card-group">
         {info.map((blog, i) => {
 
           return (
-            <Card className="mx-auto blog-list "
+            <Card className="mx-auto cards"
               key={i}
-              style={{ width: '12rem' }}
+              style={{ width: '15rem'}}
               onClick={ () =>  handleClick(blog.author, blog.bio, blog.clkImg, blog.link)}
             
               >
 
-              <Card.Img className="cardImg"variant="top" src={blog.img} style={{ height: '18rem', width: '18rem' }}/>
+              <Card.Img className="cardsImg"variant="top" src={blog.img} style={{ height: '18rem', width: '18rem' }}/>
               <Card.Body >
                 <Card.Title>{blog.author}</Card.Title>
                 <Card.Text>
@@ -68,11 +68,6 @@ const About = () => {
 
       </CardGroup>
 
-
-      <br />
-      <br />
-      <br />
-      <br />
     </div>);
 }
 

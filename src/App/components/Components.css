@@ -8,16 +8,32 @@
     text-decoration: underline;
     font-size: 4rem;
 }
+
+.blog-list{
+    left:-10rem; 
+    position: relative;
+    width: 10rem;
+    padding-left: 3rem; 
+    /* padding-right: 3rem;  */
+}
 a:link { text-decoration: none; }
 a:visited { text-decoration: none; }
 a:hover { text-decoration: underline; }
 a:active { text-decoration: none; }
 
+.card-group{
+
+    position: relative;
+    left: 5rem; 
+}
+
+
+
 .cardTitle, .blog-preview, Link {
     color: wheat;
     text-decoration: none; 
 -webkit-text-stroke-width: 1px;
- -webkit-text-stroke-color: blueviolet; 
+ -webkit-text-stroke-color: purple; 
 } 
 .mb-2{ color: rgb(0, 238, 255);
     -webkit-text-stroke-width: 1px;
@@ -28,11 +44,19 @@ a:active { text-decoration: none; }
     background-color: black;
      opacity: 0.7; 
 }
-.cards{}
+.cards{
+    position: relative;
+    left: -5rem; 
+    background-image: url('../Images/paper.png');
+    text-align: center;
+}
 
-.cardImg{
+
+.cardsImg{
     opacity: 100%;
     text-align: center;
+    position: relative;
+    left: 5rem; 
 } 
 
 .cardImg:hover {
@@ -45,10 +69,23 @@ a:active { text-decoration: none; }
 .footer {
     background-image: url('../Images/paper.png');
     height: 15rem;
+    width: 110%;
     z-index:0;
 }
 
-.page,.App-header, .card,.pageIndex {
+.page-list{
+    position: relative;
+    left: 11rem; 
+}
+.contact-form{
+   left: 23rem;
+   position: relative;
+    width: 40rem;
+    height: 25rem;
+    background-image: url('../Images/paper.png');
+    z-index:0;
+}
+.aCard, .page,.App-header, .pageIndex {
     background-image: url('../Images/paper.png');
     z-index:0;
 }

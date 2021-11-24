@@ -2,9 +2,6 @@ import './Components.css';
 import Carousel from 'react-bootstrap/Carousel'
 import info from './data';
 
-import img1 from '../Images/img1.jfif';
-import img2 from '../Images/img2.jfif';
-import img3 from '../Images/img3.jpg';
 
 const ACaro = () => { 
   
@@ -17,7 +14,7 @@ const ACaro = () => {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={img1}
+      src={info[0].art}
       alt="Holiday"
       style={{ height: '40rem', width: '60rem' }}
       
@@ -30,7 +27,7 @@ const ACaro = () => {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={img2}
+      src={info[1].art}
       alt="Magic Tools"
       style={{ height: '40rem', width: '60rem' }}
     />
@@ -43,7 +40,7 @@ const ACaro = () => {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={img3}
+      src={info[2].art}
       alt="Magic Creature"
       style={{ height: '40rem', width: '60rem' }}
     />

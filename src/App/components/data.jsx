@@ -9,7 +9,7 @@ import img2 from '../Images/img2.jfif';
 import img3 from '../Images/img3.jpg';
 
 const info = [
-  {title:  'Magic of Holidays',
+  {title:  'Holiday Magic ',
    date: 'October 2021',
    link: '/page1', 
    id: 1, 
@@ -18,7 +18,7 @@ const info = [
    clkImg: cpine,
    art: img1,
    bio: "Frostypine is an author noted for her work in fiction, and intimate knowledge of magic",
-   post: "this is Magic of Holidays",
+   post: "this is Holiday Magic",
 },
     { 
       title: 'Magic Categorization', 
@@ -29,11 +29,11 @@ const info = [
       img: cal,
       clkImg: ccal,
       art: img3,
-      bio: "Also known as Craycal, is a renowned potions mistress, and a leader in field of witchcraft",
+      bio: "Also known as Craycal, is a renowned potions mistress, and a leader in the fields of witchcraft and alchemy.",
       post: "this is Magic Categorization",
      },
 
-    { title: 'About Magic Users',
+    { title: 'The Nature of Magic, Fate, and Love',
       date: 'August 2021',
       link: '/page3', 
       id: 3 ,
@@ -42,25 +42,9 @@ const info = [
       clkImg: cwiz,
       art: img2,
       bio: "Known more often as just 'the Wise Wiz', is the founder of the magic archive, and is currently a professor at Senchen's Wizard Tower in Gleeve",
-      post: "this is About Magic Users",
+      post: "this is The Nature of Magic, Fate and Love",
     },
 
-    
-
-
-   
-  //  { title:
-  //      'Magic User Types',
-  //       body: 'body text 3',
-  //        link: '/page3',
-  //         id: 3 ,
-  //         author: "Wise Wizard",
-  //       },  
 ] 
    export default info; 
 
-   const SubmitModal = () => {
-
-
-    
-   }

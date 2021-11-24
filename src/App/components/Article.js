@@ -1,6 +1,6 @@
 import './Components.css';
 
-const Article = ({image, title,author,date,post}) => {
+const Article = ({image, title,author,date}) => {
     return (
         <div className="mx-auto">
         
@@ -21,9 +21,7 @@ const Article = ({image, title,author,date,post}) => {
       <p>
           posted  {date} 
       </p>
-      <p className="page-text">
-             {post} 
-      </p>
+  
         </div>        
     )
             }

@@ -17,7 +17,8 @@ const SubmitModal = () => {
       <Container >
         <Modal show={show} onHide={handleClose}>
           <Modal.Header className="bg-dark text-white p-3" closeButton>
-            <div>  Thank you,  </div>  <div>your message was submitted successfully!  </div>
+          {/* <Modal.Title >Thank you. </Modal.Title>  */}
+             <div className=""> Thank you. Your message was submitted successfully!  </div>
           </Modal.Header>
 
         </Modal>
@@ -32,7 +33,10 @@ const Contact = () => {
 
   return (
     <>
-<Form>
+      <br />
+      <br />
+    <div className="contact-form">
+<Form >
   <Form.Group className="mx-auto mb-3 message-box" controlId="exampleForm.ControlInput1">
     <Form.Label>
     <h3 className="mx-auto placeholdertext email-box"> Email: </h3>
@@ -52,9 +56,9 @@ const Contact = () => {
       <SubmitModal />
       <br />
       <br />
+ 
       <br />
-      <br />
-      <br />
+    </div>
     </>
   );
 }

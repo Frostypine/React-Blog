@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 
 const PageIndex = () => {
     return (
-        <>
+        <>      <br />
+        <br />
             <div className="mx-auto pageIndex">
 
-                <ul>
+                <ul className="page-list">
                     <li> <h3> Index:</h3> </li>
                     <li><Link to={info[0].link}>{info[0].title}</Link></li>
                     <li><Link to={info[1].link}>{info[1].title}</Link></li>
@@ -16,13 +17,7 @@ const PageIndex = () => {
                 <br />
             </div>
             <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
+   
             <br />
             <br />
         </>

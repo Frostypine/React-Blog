@@ -4,9 +4,9 @@ import {Nav} from 'react-bootstrap';
 
 const ANav = () => { return (
     <header className= "mx-auto linkIndex">
-    <Nav variant="tabs" defaultActiveKey="/home" horizontal>
+    <Nav variant="tabs" defaultActiveKey="/" horizontal>
   <Nav.Item>
-    <Nav.Link href="/home" ><Link to='/'>Home</Link></Nav.Link>
+    <Nav.Link href="/" ><Link to='/'>Home</Link></Nav.Link>
   </Nav.Item>
   <Nav.Item>
     <Nav.Link eventKey="/about" ><Link to='/about'>About</Link></Nav.Link>
