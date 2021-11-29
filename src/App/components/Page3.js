@@ -1,10 +1,10 @@
 import './Components.css';
 import Article from './Article';
 import info from './data';
-import Page3Text from './Page1Text';
+import Page3Content from './Page1Content';
 
 const Page3 = () => { return (
-<div className="mx-auto page">
+<div className="mx-auto page page3">
 
  <Article 
    image={info[2].art} 
@@ -13,7 +13,7 @@ const Page3 = () => { return (
    art={info[2].clkImg}
    date={info[2].date} 
    />     
-<Page3Text  post={info[2].post}  />
+<Page3Content  post={info[2].post}  />
 
     <br/><br/><br/><br/>
     </div>);
