@@ -109,10 +109,15 @@ a:active { text-decoration: none; }
     height: auto;
     color: wheat;
 }
+ .aNav{}
+header {
+    width: 100%;
+    z-index:0;
+}
 .footer {
     background-image: url('../Images/paper.png');
     height: 15rem;
-    width: 110%;
+    width: 100%;
     z-index:0;
 }
 
@@ -134,7 +139,7 @@ a:active { text-decoration: none; }
     z-index:0;
 }
 .pageIndex {
-    width: 40rem;
+    /* width: 40rem; */
     display: block;
     left: 3rem; 
     font-size: 1.5rem;
@@ -178,7 +183,7 @@ header, div,  .linkIndex {
 /* Nav.tabs.Link.active {background-color: green;}
 .navTabs.active  {background-color: green;}
 .nav-link.active{background-color: green;} */
-header {}
+
 
 .cardi:hover {
     outline: rgb(213, 255, 208) solid 4px;

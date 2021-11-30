@@ -1,6 +1,6 @@
 import './Components.css';
 
-const Article = ({image, title,author, art, date}) => {
+const ArticleHeader = ({image, title,author, art, date}) => {
     return (
         <div className="mx-auto">
         
@@ -48,5 +48,5 @@ const Article = ({image, title,author, art, date}) => {
 
           
 
-            export default Article;
+            export default ArticleHeader;
 

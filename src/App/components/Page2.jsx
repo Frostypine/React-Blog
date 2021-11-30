@@ -1,12 +1,12 @@
 import './Components.css';
-import Article from './Article';
+import ArticleHeader  from './Article';
 import info from './data';
 import Page2Content from './Page1Content';
 
 const Page2 = () => { return (
 <div className="mx-auto page page2">
 
- <Article 
+ <ArticleHeader 
    image={info[1].art} 
    title={info[1].title} 
    author={info[1].author} 

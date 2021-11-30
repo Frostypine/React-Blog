@@ -16,7 +16,7 @@ const ANav = () => {
   const [content, setContent] = useState(data);
 
   return (
-    <header className= "mx-auto linkIndex">
+    <header className= "mx-auto linkIndex aNav">
     <Nav variant="tabs" defaultActiveKey="/" horizontal>
   <Nav.Item>
     <Nav.Link href="/" ><Link to='/'>Home</Link></Nav.Link>
