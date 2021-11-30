@@ -13,7 +13,7 @@ const Page1 = () => { return (
    art={info[0].clkImg}
    date={info[0].date} 
    />     
-<Page1Content  post={info[0].post}  />
+<Page1Content  info={info}  />
 
     <br/><br/><br/><br/>
     </div>);

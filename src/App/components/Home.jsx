@@ -9,8 +9,8 @@ const Home = () => {
     <div >    
     <ACaro/>
     <br/>
-      {/* <p className = "placeholdertext">home</p> */}
-        <DataList props={info} />    
+      {/* <p className = "placeholdertext">home</p>props={info} */}
+        <DataList  />    
         <br/>
         <br/>   
     </div>

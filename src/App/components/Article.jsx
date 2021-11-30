@@ -9,6 +9,7 @@ const Article = ({image, title,author, art, date}) => {
         src={image}
      
         alt=""
+        fluid
         //style={{ height: '40rem', width: '60rem' }}
       />  
         {/* console.log({image});  */}

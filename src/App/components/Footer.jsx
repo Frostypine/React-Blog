@@ -8,7 +8,7 @@ const Footer = () => {
             <br />
             <br />
             <ANav /> 
-            <button className="admin-button">Admin</button>
+            {/* <button className="admin-button">Admin</button> */}
             <br />
             <br />
             <br />

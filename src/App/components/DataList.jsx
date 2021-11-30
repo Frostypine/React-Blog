@@ -1,19 +1,29 @@
 import './Components.css';
- import {  Link } from 'react-router-dom';
- import {Card} from 'react-bootstrap'; 
+import {  Link } from 'react-router-dom';
+import {Card, CardGroup} from 'react-bootstrap'; 
+import { useSelector, useDispatch } from 'react-redux';
+import { deleteContent, selectContent } from '../../state/contentSlice';
 
-const DataList = ( {props}) => {
-    
-    console.log(props)
+const DataList = () => {
+    const dispatch = useDispatch();
+    const blogInfo = useSelector(selectContent)
+    console.log(blogInfo)
+
+    const deleteHandler = (index) => {
+      console.log(index)
+      dispatch(deleteContent(index))
+    }
     return (
-        <div className="mx-auto blog-list">
+        <div className="mx-auto blog-list"
+        
+        >
 
  
-            {props.map((data,i) => (
-                <div key={i}>
+            {blogInfo.map((data,index) => (
+                <div key={index}>
                           
 <Card style={{ width: '25rem' } }className="cardi bg-dark ">
-  <Card.Img  src= {data.art} alt="" />
+  <Card.Img  src= {data.art} alt="" fluid/>
   <Card.ImgOverlay>
   <Card.Body>
    <Link to= {data.link}>  

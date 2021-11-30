@@ -1,8 +1,21 @@
 import './Components.css';
+import {useState} from 'react'; 
 import {  Link } from 'react-router-dom';
-import {Nav} from 'react-bootstrap'; 
+import {Nav, Button} from 'react-bootstrap'; 
+import Admin from './Admin';
+import data from '../components/data'; 
 
-const ANav = () => { return (
+const ANav = () => {
+
+  //these are to set up the modal 
+  const [show, setShow] = useState(false);
+  const handleShow = () => {
+    setShow(true); 
+  }
+  //this is to set the default content to the site content 
+  const [content, setContent] = useState(data);
+
+  return (
     <header className= "mx-auto linkIndex">
     <Nav variant="tabs" defaultActiveKey="/" horizontal>
   <Nav.Item>
@@ -21,14 +34,13 @@ const ANav = () => { return (
     <Link to='/index'>Index</Link>
     </Nav.Link>
   </Nav.Item>
+
+     <Button onClick = {handleShow} className="">Admin</Button> 
+ <Admin defaultContent={data} setShow={setShow} show={show} />
 </Nav>
 
-     
-     {/* <nav> <Link to='/home'>Home|</Link>
-      <Link to='/about'>About|</Link>
-      <Link to='/contact'>Contact|</Link>
-      <Link to='/index'>Index</Link>
-    </nav> */}
+   
+   
             <br />
         
   </header>

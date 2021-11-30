@@ -17,7 +17,7 @@ const ACaro = () => {
       src={info[0].art}
       alt="Holiday"
       style={{ height: '40rem', width: '60rem' }}
-      
+      fluid
     />
     <Carousel.Caption>
       <h3></h3>
@@ -30,6 +30,7 @@ const ACaro = () => {
       src={info[1].art}
       alt="Magic Tools"
       style={{ height: '40rem', width: '60rem' }}
+      fluid
     />
 
     <Carousel.Caption>
@@ -43,6 +44,7 @@ const ACaro = () => {
       src={info[2].art}
       alt="Magic Creature"
       style={{ height: '40rem', width: '60rem' }}
+      fluid
     />
     <Carousel.Caption>
       <h3></h3>
@@ -55,6 +57,7 @@ const ACaro = () => {
       src={img4}
       alt="fire heart"
       style={{ height: '40rem', width: '60rem' }}
+      fluid
     />
     <Carousel.Caption>
       <h3></h3>
