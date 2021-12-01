@@ -1,3 +1,7 @@
+//PageIndex.jsx
+//React Blog Assignment 
+//Array Bootcamp Fall 2021
+//Katie Greenwald 
 import info from './data';
 import { Link } from 'react-router-dom';
 

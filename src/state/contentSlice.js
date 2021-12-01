@@ -1,3 +1,8 @@
+//contentSlice.js
+//React Blog Assignment 
+//Array Bootcamp Fall 2021
+//Katie Greenwald 
+
 import {createSlice} from '@reduxjs/toolkit';
 import data from '../App/components/data';
 let content = []

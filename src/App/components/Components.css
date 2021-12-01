@@ -1,3 +1,16 @@
+/* Components.css 
+   React Blog Assignment 
+   Array Bootcamp Fall 2021
+   Katie Greenwald 
+*/
+
+
+.par-box{
+    height: 12rem; 
+    overflow: scroll;
+}
+
+
 .admin-button{
     background-color: white;
     position: relative;
@@ -110,9 +123,9 @@ a:active { text-decoration: none; }
     color: wheat;
 }
   .aNav, header, footer {
-          width: 100%;
+    width: 100%;
     z-index:0;
-    
+    position: relative;
   }
 
 
@@ -155,7 +168,7 @@ header {
     font-size: 1.5rem;
 }
 .form{
-    width: 12rem;
+    width: 14rem;
     display: block;
     
 }

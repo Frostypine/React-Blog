@@ -1,3 +1,7 @@
+//Main.jsx
+//React Blog Assignment 
+//Array Bootcamp Fall 2021
+//Katie Greenwald 
 
 import {  Route, Switch } from 'react-router-dom';
 import Home from './Home';
@@ -32,14 +36,6 @@ const Main = () => {return (
     <Route path='/page/:index'> 
     <Page/>
     </Route>
-    {/* 
-    <Route path='/page2'> 
-    <Page2/>
-    </Route>
-    <Route path='/page3'> 
-    <Page3/> 
-    </Route>*/}
-
     <Route path='*'> 
           <Error/> 
     </Route>

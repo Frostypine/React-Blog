@@ -18,7 +18,7 @@ const ANav = () => {
     setShow(true); 
   }
   //this is to set the default content to the site content 
-  const [content, setContent] = useState(data);
+ // const [content, setContent] = useState(data);
 
   return (
     <header className= "mx-auto linkIndex aNav">

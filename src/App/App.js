@@ -1,13 +1,14 @@
-//App blog
+//App.js
+//React Blog Assignment 
+//Array Bootcamp Fall 2021
+//Katie Greenwald 
+
 import './App.css';
 import Main from  './components/Main';
 import ANav from  './components/ANav';
 import ScrollToTop from "react-scroll-to-top";
 import Footer from './components/Footer';
-/* import {Container, Row, Col} from 'react-bootstrap'; 
-<div className="content">
-<Home info={info} />
-</div> */
+ //import {Container, Row, Col} from 'react-bootstrap'; 
 
 const App = () => {
 
@@ -37,28 +38,6 @@ export default App;
 
 
 
-{/* <div className="App"
-style={{  width: 1000, padding: 30 }}
->
- <Container fluid>
-        <Row>
-          <Col></Col>
-          <Col fluid xl>
-             <ANav/> 
-          </Col>
-          <Col></Col>
-        </Row>
-        <Row>
-          <Col></Col>
-          <Col fluid xl>
-         <header className="App-header">
-       <h1> A Blog</h1>
-      </header>   
-       <Main/> 
-          </Col>
-          <Col></Col>
-        </Row>
-  </Container>  */}
 
 
 

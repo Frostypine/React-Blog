@@ -1,24 +1,27 @@
+//DataList.jsx
+//React Blog Assignment 
+//Array Bootcamp Fall 2021
+//Katie Greenwald 
+
 import './Components.css';
 import {  Link } from 'react-router-dom';
-import {Card, CardGroup} from 'react-bootstrap'; 
+import {Card} from 'react-bootstrap'; 
 import { useSelector, useDispatch } from 'react-redux';
 import { deleteContent, selectContent } from '../../state/contentSlice';
-
+//import { CardGroup} from 'react-bootstrap'; 
 const DataList = () => {
     const dispatch = useDispatch();
     const blogInfo = useSelector(selectContent)
-    console.log(blogInfo)
+    // console.log(blogInfo)
 
     const deleteHandler = (index) => {
-      console.log(index)
+      // console.log(index)
       dispatch(deleteContent(index))
     }
     return (
         <div className="mx-auto blog-list"
         
         >
-
- 
             {blogInfo.map((data,index) => (
                 <div key={index}>
                           

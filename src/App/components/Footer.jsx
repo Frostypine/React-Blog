@@ -1,5 +1,9 @@
+//Footer.js
+//React Blog Assignment 
+//Array Bootcamp Fall 2021
+//Katie Greenwald 
+
 import './Components.css';
-import { Link } from 'react-router-dom';
 import ANav from './ANav';
 
 const Footer = () => {
@@ -8,9 +12,6 @@ const Footer = () => {
             <br />
             <br />
             <ANav /> 
-            {/* <button className="admin-button">Admin</button> */}
-            <br />
-            <br />
             <br />
             <br />
            

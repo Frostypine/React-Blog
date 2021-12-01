@@ -1,7 +1,12 @@
+//Contact.jsx
+//React Blog Assignment 
+//Array Bootcamp Fall 2021
+//Katie Greenwald 
+
 import './Components.css';
 import { Modal, Container, Form } from 'react-bootstrap'
-import React,  { useState, useEffect } from 'react'
-
+import React,  { useState } from 'react'
+//import  {useEffect } from 'react'
 
 const SubmitModal = () => {
   //for the modal

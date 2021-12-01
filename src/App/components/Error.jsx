@@ -1,4 +1,7 @@
-
+//Error.jsx
+//React Blog Assignment 
+//Array Bootcamp Fall 2021
+//Katie Greenwald 
 const Error = () => {
     return (
        <div>

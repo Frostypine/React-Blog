@@ -25,8 +25,8 @@ const ACaro = () => {
       fluid
     />
     <Carousel.Caption>
-      <h3></h3>
-      <p></p>
+     {/* <h3></h3>
+      <p></p> */}
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -39,8 +39,8 @@ const ACaro = () => {
     />
 
     <Carousel.Caption>
-      <h3></h3>
-      <p></p>
+      {/* <h3></h3>
+      <p></p> */}
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -52,8 +52,8 @@ const ACaro = () => {
       fluid
     />
     <Carousel.Caption>
-      <h3></h3>
-      <p></p>
+      {/* <h3></h3>
+      <p></p> */}
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -65,8 +65,8 @@ const ACaro = () => {
       fluid
     />
     <Carousel.Caption>
-      <h3></h3>
-      <p></p>
+      {/* <h3></h3>
+      <p></p> */}
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
