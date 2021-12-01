@@ -12,7 +12,7 @@ export const contentSlice = createSlice ({
     reducers: {
        addContent: (state, action) => {
         console.log(action.payload); 
-        state.content.push(action.payload)
+        state.content = action.payload;
         localStorage.setItem('storedContent', JSON.stringify(state.content));
     },
     deleteContent: (state,action) => {

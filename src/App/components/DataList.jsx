@@ -26,7 +26,7 @@ const DataList = () => {
   <Card.Img  src= {data.art} alt="" fluid/>
   <Card.ImgOverlay>
   <Card.Body>
-   <Link to= {data.link}>  
+   <Link to={`/page/${index}`}>  
    <Card.Title className="cardTitle">
    <div className="blog-preview "><h2>{data.title}</h2></div>
     </Card.Title>

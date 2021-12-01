@@ -45,7 +45,11 @@ const Admin = ({ defaultContent, setShow, show }) => {
             <Modal show={show} onHide={handleClose}width="100rem">
                 <Modal.Title>Update Content</Modal.Title>
                 <Form className="bg-secondary">
-                <Form.Control className="bg-light m-1 text-secondary"  size="lg" type="text" placeholder="title" name="title" onChange={updateField}/>
+                <Form.Control className="bg-light m-1 text-secondary"  
+                size="lg" type="text" placeholder="title" name="title" onChange={updateField}/>
+                 <Form.Control className="bg-light m-1 text-secondary"  
+                size="lg" type="text" placeholder="title" name="title" onChange={updateField}/>
+               
                 </Form>
                 <Modal.Footer className="bg-dark">
                  <Button size="sm" variant="secondary" onClick={resetSite}>Reset Site</Button>

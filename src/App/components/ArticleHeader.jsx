@@ -1,12 +1,19 @@
 import './Components.css';
+import { useParams } from 'react-router';
+import { useSelector} from 'react-redux';
+import { deleteContent, selectContent } from '../../state/contentSlice';
 
-const ArticleHeader = ({image, title,author, art, date}) => {
+const ArticleHeader = () => {
+    const {index} = useParams(); 
+
+const info = useSelector(selectContent);
+
     return (
         <div className="mx-auto">
         
         <img
         className="mx-auto blog-image "
-        src={image}
+        src={info[index].image}
      
         alt=""
         fluid
@@ -14,7 +21,7 @@ const ArticleHeader = ({image, title,author, art, date}) => {
       />  
         {/* console.log({image});  */}
       <h1 className= "blog-title">
-      {title}
+      {info[index].title}
       </h1>
 
 
@@ -26,13 +33,13 @@ const ArticleHeader = ({image, title,author, art, date}) => {
             <div className="card">
                 <div className="card-horizontal author-card">
                     <div className="img-square-wrapper">
-                        <img className="" src={art} alt="Card image cap"
+                        <img className="" src={info[index].art} alt="Card image cap"
                         style={{ height: '9rem', width: '8rem' }}
                         />
                     </div>
                     <div className="card-body">
-                        <p className="card-text">By {author} </p>
-                        <h4 className="card-title">On {date}</h4>
+                        <p className="card-text">By {info[index].author} </p>
+                        <h4 className="card-title">On {info[index].date}</h4>
                     </div>
                     
                 </div>
