@@ -4,7 +4,9 @@ const PageContent = ( post, text) => {
   return (
   
     <div className="page-text">
-     
+           <p>
+        {post}
+      </p>
       <p>
         {text[0]}
       </p>
