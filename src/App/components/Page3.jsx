@@ -1,7 +1,7 @@
 import './Components.css';
-import ArticleHeader  from './Article';
+import ArticleHeader  from './ArticleHeader';
 import info from './data';
-import Page3Content from './Page1Content';
+import Page3Content from './Page3Content';
 
 const Page3 = () => { return (
 <div className="mx-auto page page3">
@@ -13,7 +13,10 @@ const Page3 = () => { return (
    art={info[2].clkImg}
    date={info[2].date} 
    />     
-<Page3Content  post={info[2].post}  />
+<Page3Content  
+post={info[2].post} 
+text={info[2].text} 
+ />
 
     <br/><br/><br/><br/>
     </div>);

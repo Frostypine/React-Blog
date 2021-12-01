@@ -109,15 +109,25 @@ a:active { text-decoration: none; }
     height: auto;
     color: wheat;
 }
- .aNav{}
-header {
-    width: 100%;
+  .aNav, header, footer {
+          width: 100%;
     z-index:0;
+    
+  }
+
+
+ .aNav{
+     position: relative;
+     left: 4rem;
+    
+     }
+header {
+
 }
 .footer {
     background-image: url('../Images/paper.png');
     height: 15rem;
-    width: 100%;
+   
     z-index:0;
 }
 
@@ -139,7 +149,7 @@ header {
     z-index:0;
 }
 .pageIndex {
-    /* width: 40rem; */
+    width: 40rem;
     display: block;
     left: 3rem; 
     font-size: 1.5rem;
@@ -159,7 +169,7 @@ textarea{background-color: rgb(0, 0, 0);}
 
 .page{
     width: 45rem;
-     height: 230rem;
+     height: 220rem;
     padding-bottom: 10rem;
     text-align: center;
 }

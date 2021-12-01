@@ -34,6 +34,7 @@ const ArticleHeader = ({image, title,author, art, date}) => {
                         <p className="card-text">By {author} </p>
                         <h4 className="card-title">On {date}</h4>
                     </div>
+                    
                 </div>
   
         </div>

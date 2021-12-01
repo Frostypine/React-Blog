@@ -10,7 +10,7 @@ const ACaro = () => {
 
 
 <div className="mx-auto caro fluid-image container-fluid "/*key={i}*/>
-<Carousel className="mx-auto caro" style={{ height: '40rem', width: '60rem' }}>
+<Carousel className="mx-auto caro container-fluid" style={{ height: '40rem', width: '60rem' }} fluid>
   <Carousel.Item>
     <img
       className="d-block w-100 fluid"

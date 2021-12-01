@@ -1,6 +1,6 @@
 import './Components.css';
 import Article from './Article';
-import Page1Content from './Page1Content';
+import PageContent from './Page1Content';
 import info from './data';
 
 const Page = () => { return (
@@ -13,7 +13,7 @@ const Page = () => { return (
    art={info[0].clkImg}
    date={info[0].date} 
    />     
-<Page1Content  post={info[0].post}  />
+<PageContent  post={info[0].post}  />
 
     <br/><br/><br/><br/>
     </div>);
