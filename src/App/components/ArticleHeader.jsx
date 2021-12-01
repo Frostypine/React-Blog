@@ -1,7 +1,13 @@
+//ArticleHeader.jsx
+//React Blog Assignment 
+//Array Bootcamp Fall 2021
+//Katie Greenwald 
+
 import './Components.css';
 import { useParams } from 'react-router';
 import { useSelector} from 'react-redux';
-import { deleteContent, selectContent } from '../../state/contentSlice';
+import {  selectContent } from '../../state/contentSlice';
+//import { deleteContent } from '../../state/contentSlice';
 
 const ArticleHeader = () => {
     const {index} = useParams(); 
@@ -13,7 +19,7 @@ const info = useSelector(selectContent);
         
         <img
         className="mx-auto blog-image "
-        src={info[index].image}
+        src={info[index].art}
      
         alt=""
         fluid
@@ -33,7 +39,7 @@ const info = useSelector(selectContent);
             <div className="card">
                 <div className="card-horizontal author-card">
                     <div className="img-square-wrapper">
-                        <img className="" src={info[index].art} alt="Card image cap"
+                        <img className="" src={info[index].clkImg} alt="Card image cap"
                         style={{ height: '9rem', width: '8rem' }}
                         />
                     </div>

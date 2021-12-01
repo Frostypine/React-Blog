@@ -1,3 +1,8 @@
+//About.jsx
+//React Blog Assignment 
+//Array Bootcamp Fall 2021
+//Katie Greenwald 
+
 import './Components.css';
 import { Card, CardGroup } from 'react-bootstrap';
 import { useState } from 'react';

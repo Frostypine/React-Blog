@@ -1,3 +1,8 @@
+//Page.jsx
+//React Blog Assignment 
+//Array Bootcamp Fall 2021
+//Katie Greenwald 
+
 import './Components.css';
 import ArticleHeader from './ArticleHeader';
 import PageContent from './PageContent';

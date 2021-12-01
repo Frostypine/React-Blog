@@ -1,3 +1,8 @@
+//ANav.jsx
+//React Blog Assignment 
+//Array Bootcamp Fall 2021
+//Katie Greenwald 
+
 import './Components.css';
 import {useState} from 'react'; 
 import {  Link } from 'react-router-dom';
