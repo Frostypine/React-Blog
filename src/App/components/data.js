@@ -37,7 +37,10 @@ const info = [
    clkImg: cpine,
    art: img1,
    bio: "Frostypine is an author noted for her work in fiction, and intimate knowledge of magic",
-   text: text1,
+  // text: text1,
+  text0: "a",
+  text1: "b",
+  text2: "c",
   
   },
     { 
@@ -51,7 +54,10 @@ const info = [
       clkImg: ccal,
       art: img3,
       bio: "Also known as Craycal, is a renowned potions mistress, and a leader in the fields of witchcraft and alchemy.",
-      text: text1,
+      //text: text1,
+      text0: "a",
+      text1: "b",
+      text2: "c",
      },
 
     { title: 'The Nature of Magic, Fate, and Love',
@@ -64,7 +70,11 @@ const info = [
       clkImg: cwiz,
       art: img2,
       bio: "Known more often as just 'the Wise Wiz', is the founder of the magic archive, and is currently a professor at Senchen's Wizard Tower in Gleeve",
-      text: text1,
+      //text: text1,
+    
+      text0: "a",
+      text1: "b",
+      text2: "c",
     },
 
 ] 

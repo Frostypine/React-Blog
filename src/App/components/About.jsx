@@ -31,7 +31,7 @@ const About = () => {
       <Card className="mx-auto aCard "
         style={{ height: '30rem', width: '18rem' }}>
           <div className="imgBox" style={{ height: '18rem', width: '18rem' }}>
-         <Card.Img className="cardImg"variant="top" src={image}    style={{ height: '18rem', width: '18rem' }}   />
+         <Card.Img className="img-fluid cardImg"variant="top" src={image}    style={{ height: '18rem', width: '18rem' }}   />
          </div>
         <Card.Body>
         <Link to= {page}> 
@@ -59,7 +59,7 @@ const About = () => {
             
               >
 
-              <Card.Img className="cardsImg"variant="top" src={blog.img} style={{ height: '18rem', width: '18rem' }}/>
+              <Card.Img className="img-fluid cardsImg"variant="top" src={blog.img} style={{ height: '18rem', width: '18rem' }}/>
               <Card.Body >
                 <Card.Title>{blog.author}</Card.Title>
                 <Card.Text>

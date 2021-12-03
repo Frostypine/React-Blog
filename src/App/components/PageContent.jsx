@@ -10,28 +10,42 @@ import { selectContent } from '../../state/contentSlice';
 //import {deleteContent } from '../../state/contentSlice';
 
 
-const PageContent = ( post, text) => {
+const PageContent = () => {
 
   const {index} = useParams(); 
 
   const info = useSelector(selectContent);
-function createPosts() {
-  for (let i =0; i <info[index].text.length; i++ ){
-    <p>
-    {info[index].text[i]}
-  </p>
-  }
-}
+
+// function createPosts() {
+//   for (let i =0; i <info[index].text.length; i++ ){
+//     <p>
+//     {info[index].text[i]}
+//   </p>
+//   }
+// }
+
+
   return (
   
     <div className="page-text">
+
            <p>
         {info[index].body}
-      </p>
+      </p> 
 
-     <div onLoad ={createPosts} ></div>
+     {/* <div onLoad ={createPosts} ></div> 
 
+   {info.map((blog, index) => {
+     return (
+      <p>
+      {blog.text1}
+    </p>
+     )
+   }
 
+   )}*/}
+
+{/*    
       <p>
         {info[index].text[0]}
       </p>
@@ -65,7 +79,7 @@ function createPosts() {
       </p>
       <p>
         {info[index].text[10]}
-      </p> 
+      </p>  */}
 
 
     </div>

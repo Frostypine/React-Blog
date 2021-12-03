@@ -18,7 +18,7 @@ const info = useSelector(selectContent);
         <div className="mx-auto">
         
         <img
-        className="mx-auto blog-image "
+        className="img-fluid mx-auto blog-image "
         src={info[index].art}
      
         alt="article art"
@@ -39,7 +39,7 @@ const info = useSelector(selectContent);
             <div className="card">
                 <div className="card-horizontal author-card">
                     <div className="img-square-wrapper">
-                        <img className="" src={info[index].clkImg} alt="author avatar"
+                        <img className="img-fluid" src={info[index].clkImg} alt="author avatar"
                         style={{ height: '9rem', width: '8rem' }}
                         />
                     </div>

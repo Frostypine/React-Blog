@@ -33,7 +33,7 @@
 .blog-image {
     height: 40rem;
     width: 50rem;
-    left: -3rem; 
+    left: 0rem; 
     position: relative;
 }
 .blog-title{
@@ -46,7 +46,8 @@
     position: relative;
     width: 10rem;
     padding-left: 3rem; 
-    /* padding-right: 3rem;  */
+   /*  overflow: scroll;
+    padding-right: 3rem;  */
 }
 a:link { text-decoration: none; }
 a:visited { text-decoration: none; }
@@ -120,6 +121,7 @@ a:active { text-decoration: none; }
 }
 .caro {
     height: auto;
+
     color: wheat;
 }
   .aNav, header, footer {
@@ -140,7 +142,7 @@ header {
 .footer {
     background-image: url('../Images/paper.png');
     height: 15rem;
-   
+    padding-top: 0;
     z-index:0;
 }
 

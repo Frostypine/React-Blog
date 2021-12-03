@@ -8,6 +8,7 @@ import { Form, Modal, Container, Button, FloatingLabel } from 'react-bootstrap';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContent, selectContent } from '../../state/contentSlice';
+import DataList from './DataList';
 
 
 
@@ -57,11 +58,14 @@ const Admin = ({ defaultContent, setShow, show }) => {
                 size="lg" type="text" placeholder="date" name="date" onChange={updateField}/>
                
                <FloatingLabel controlId="floatingSelect" label="authors">
+                
                 <Form.Select className="mx-auto bg-light m-1 text-secondary"  
-                size="lg" type="text" placeholder="title" name="title" onChange={updateField}>
+                size="lg" type="text" placeholder="title" name="title" list="authors" onChange={updateField}>
+                    <datalist id="authors"> 
                     <option>Frostypine    </option>
                     <option>Crazy Cauldron</option>
                     <option>Wise Wizard</option>
+                    </datalist>
                     </Form.Select>
                     </FloatingLabel>
                <Button>new author</Button>
@@ -108,13 +112,14 @@ export default Admin;
 /*
    title  
    date
-   author
+   author    author list/add through typing 
    body       article blurb 
    art         article art 
 
    id     index 
    link   'page' + '/index'
 
+   img          make avatar transparent or somthing ? 
    clkImg     colored author avatar maybe 
    bio           author bio 
    text     takes pars adn turns into array? 

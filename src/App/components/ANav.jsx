@@ -34,11 +34,11 @@ const ANav = () => {
    Contact</Link>
     </Nav.Link>
   </Nav.Item>
-  <Nav.Item>
+  {/* <Nav.Item>
     <Nav.Link eventKey="/index"href="/index" >
     <Link to='/index'>Index</Link>
     </Nav.Link>
-  </Nav.Item>
+  </Nav.Item> */}
 
      <Button onClick = {handleShow} className="">Admin</Button> 
  <Admin defaultContent={data} setShow={setShow} show={show} />

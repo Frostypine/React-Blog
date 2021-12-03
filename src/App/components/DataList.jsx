@@ -19,9 +19,7 @@ const DataList = () => {
       dispatch(deleteContent(index))
     }
     return (
-        <div className="mx-auto blog-list"
-        
-        >
+        <div className="mx-auto blog-list">
             {blogInfo.map((data,index) => (
                 <div key={index}>
                           

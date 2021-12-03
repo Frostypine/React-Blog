@@ -14,11 +14,11 @@ const ACaro = () => {
     return (
 
 
-<div className="mx-auto caro fluid-image container-fluid "/*key={i}*/>
+<div className="mx-auto caro  container-fluid "/*key={i}*/>
 <Carousel className="mx-auto caro container-fluid" style={{ height: '40rem', width: '60rem' }} fluid>
   <Carousel.Item>
     <img
-      className="d-block w-100 fluid"
+      className="d-block w-100 img-fluid fluid"
       src={info[0].art}
       alt="Holiday"
       style={{ height: '40rem', width: '60rem' }}
@@ -31,7 +31,7 @@ const ACaro = () => {
   </Carousel.Item>
   <Carousel.Item>
     <img
-      className="d-block w-100"
+      className="img-fluid d-block w-100"
       src={info[1].art}
       alt="Magic Tools"
       style={{ height: '40rem', width: '60rem' }}
@@ -45,10 +45,10 @@ const ACaro = () => {
   </Carousel.Item>
   <Carousel.Item>
     <img
-      className="d-block w-100"
+      className="img-fluid d-block w-100"
       src={info[2].art}
       alt="Magic Creature"
-      style={{ height: '40rem', width: '60rem' }}
+      style={{ height: '40rem', width: '60rem'  }}
       fluid
     />
     <Carousel.Caption>
@@ -58,7 +58,7 @@ const ACaro = () => {
   </Carousel.Item>
   <Carousel.Item>
     <img
-      className="d-block w-100"
+      className="img-fluid d-block w-100"
       src={img4}
       alt="fire heart"
       style={{ height: '40rem', width: '60rem' }}
