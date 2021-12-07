@@ -8,7 +8,7 @@ import { Form, Modal, Container, Button, FloatingLabel } from 'react-bootstrap';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContent, selectContent } from '../../state/contentSlice';
-import DataList from './DataList';
+//import DataList from './DataList';
 
 
 
@@ -16,7 +16,8 @@ const Admin = ({ defaultContent, setShow, show }) => {
     const dispatch = useDispatch();
     const content = useSelector(selectContent);
 
-    const [response, setResponse] = useState({ title: "" }) //we use this to keep track of the form input , see handleSubmit
+    const [response, setResponse] = useState({ title: "", author: "" }) //we use this to keep track of the form input , see handleSubmit
+    
 
     //this function takes the form responses and makes them into a key value pair, then puts it into 'response'
     const updateField = (e) => {
@@ -46,6 +47,10 @@ const Admin = ({ defaultContent, setShow, show }) => {
             dispatch(addContent(updateContentArr));
             setResponse({});
         }
+        if (response.author) {
+            dispatch(addContent(updateContentArr));
+            setResponse({});
+        }
     }
     return (
         <Container>
@@ -53,22 +58,24 @@ const Admin = ({ defaultContent, setShow, show }) => {
                 <Modal.Title className="bg-dark text-secondary">Update Content</Modal.Title>
                 <Form className="bg-secondary">
           <Form.Control className="mx-auto bg-light m-1 text-secondary"  
-                size="lg" type="text" placeholder="title" name="title" onChange={updateField}/>
+                size="lg" type="text" placeholder="Title:" name="title" onChange={updateField}/>
            <Form.Control className="mx-auto bg-light m-1 text-secondary"  
-                size="lg" type="text" placeholder="date" name="date" onChange={updateField}/>
+                size="lg" type="text" placeholder="Date:" name="date" onChange={updateField}/>
                
-               <FloatingLabel controlId="floatingSelect" label="authors">
+               <FloatingLabel controlId="floatingSelect" label="Authors:">
                 
                 <Form.Select className="mx-auto bg-light m-1 text-secondary"  
-                size="lg" type="text" placeholder="title" name="title" list="authors" onChange={updateField}>
-                    <datalist id="authors"> 
+                size="lg" type="text" placeholder="authors" name="author" 
+                list="authors" onChange={updateField}>
+                    {/*  <datalist id="authors">  </datalist>*/}
+               
                     <option>Frostypine    </option>
                     <option>Crazy Cauldron</option>
                     <option>Wise Wizard</option>
-                    </datalist>
+         
                     </Form.Select>
                     </FloatingLabel>
-               <Button>new author</Button>
+               {/* <Button>new author</Button> */}
 
                 <h3>Paragraphs:</h3>
                 <div className="par-box">
@@ -94,7 +101,7 @@ const Admin = ({ defaultContent, setShow, show }) => {
                 size="lg" type="text" placeholder="par10" name="par10" onChange={updateField}/>
                  </div>
               <h3>Article Image:</h3>
-              <Form.Control type="file" />
+              <Form.Control className="mx-auto" type="file" name="art" onChange={updateField}/>
 
                 </Form>
                 <Modal.Footer className="bg-dark">

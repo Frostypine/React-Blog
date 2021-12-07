@@ -1,6 +1,6 @@
 import './Components.css';
 import ArticleHeader from './ArticleHeader';
-import Page1Content from './Page1Content';
+import Page1Content from '../src/App/components/Page1Content';
 import info from './data';
 
 const Page1 = () => { return (

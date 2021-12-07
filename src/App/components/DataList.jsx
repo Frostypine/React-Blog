@@ -8,6 +8,8 @@ import {  Link } from 'react-router-dom';
 import {Card} from 'react-bootstrap'; 
 import { useSelector, useDispatch } from 'react-redux';
 import { deleteContent, selectContent } from '../../state/contentSlice';
+import img4 from '../Images/img4.jfif';
+
 //import { CardGroup} from 'react-bootstrap'; 
 const DataList = () => {
     const dispatch = useDispatch();
@@ -24,7 +26,7 @@ const DataList = () => {
                 <div key={index}>
                           
 <Card style={{ width: '25rem' } }className="cardi bg-dark ">
-  <Card.Img  src= {data.art} alt="" fluid/>
+  <Card.Img  src= {data.art} alt="image" fluid/> {/*alt={img4}   */}
   <Card.ImgOverlay>
   <Card.Body>
    <Link to={`/page/${index}`}>  
