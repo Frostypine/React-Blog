@@ -7,12 +7,17 @@ import './Components.css';
 import { Card, CardGroup } from 'react-bootstrap';
 import { useState } from 'react';
 import {  Link } from 'react-router-dom';
-import info from './data';
+//import info from './data';
+import { useSelector } from 'react-redux';
+import { selectContent } from '../../state/contentSlice';
 
-//import {Container, Row, Col} from 'react-bootstrap';
+
 
 
 const About = () => {
+ 
+  const info = useSelector(selectContent);
+
   const [author, setAuthor] = useState();
   const [bio, setBio] = useState();
   const [image, setImage] = useState();

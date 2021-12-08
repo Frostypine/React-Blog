@@ -8,7 +8,7 @@ import {  Link } from 'react-router-dom';
 import {Card} from 'react-bootstrap'; 
 import { useSelector, useDispatch } from 'react-redux';
 import { deleteContent, selectContent } from '../../state/contentSlice';
-import img4 from '../Images/img4.jfif';
+//import img4 from '../Images/img4.jfif';
 
 //import { CardGroup} from 'react-bootstrap'; 
 const DataList = () => {

@@ -8,7 +8,7 @@ import ArticleHeader from './ArticleHeader';
 //import Page1Content from '../../../rnd/Page1Content';
 import PageContent from './PageContent';
 
-import info from './data';
+//import info from './data';
 
 const Page = () => { 
    
