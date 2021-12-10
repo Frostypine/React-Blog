@@ -35,6 +35,13 @@ const Admin = ({ defaultContent, setShow, show }) => {
         localStorage.setItem("storedContent", JSON.stringify(defaultContent));
         window.location.reload(false);
     }
+    const resetComments = () => {
+      
+        handleClose();
+        localStorage.clear("storedComments");
+        window.location.reload(false);
+       
+    }
 
     //send updated library to redux store
     const handleSubmit = (e) => {
@@ -114,8 +121,10 @@ const Admin = ({ defaultContent, setShow, show }) => {
               <Form.Control className="mx-auto" type="file" name="art" onChange={updateField}/>
 
                 </Form>
-                <Modal.Footer className="bg-dark">
+                <Modal.Footer className="bg-dark">  
+                <Button size="sm" variant="secondary" onClick={resetComments}>Clear Comments</Button>
                  <Button size="sm" variant="secondary" onClick={resetSite}>Reset Site</Button>
+               
                  <Button onClick={handleSubmit}>Submit</Button>
                 </Modal.Footer>
             </Modal>

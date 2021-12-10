@@ -7,8 +7,8 @@ import './Components.css';
 import ArticleHeader from './ArticleHeader';
 //import Page1Content from '../../../rnd/Page1Content';
 import PageContent from './PageContent';
-
 //import info from './data';
+import Comments from './Comments'; 
 
 const Page = () => { 
    
@@ -23,6 +23,7 @@ text={info[0].text}
 />*/}
 <PageContent />
 
+<Comments/>
 
     <br/><br/><br/><br/>
     </div>);

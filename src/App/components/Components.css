@@ -3,7 +3,23 @@
    Array Bootcamp Fall 2021
    Katie Greenwald 
 */
-
+.commentForm{z-index: 2;}
+.commentBox{
+    padding-left: 10rem;
+    position: relative;
+    width: 40rem;
+    height: 18rem;
+   overflow: scroll;
+    overflow-x: hidden; 
+ /*   overflow-y: hidden;  padding-top: 20rem;*/
+    display: block;
+    z-index: 2;
+    padding-right: 5rem;
+}
+.comment{
+    z-index: 2;
+   
+}
 
 .par-box{
     height: 12rem; 
@@ -199,8 +215,9 @@ textarea{background-color: rgb(0, 0, 0);}
 .page{
     width: 45rem;
      height: 170rem;
-    padding-bottom: 10rem;
+    padding-bottom: 50rem;
     text-align: center;
+
 }
 .page1{}
 .page2{}
@@ -210,6 +227,7 @@ textarea{background-color: rgb(0, 0, 0);}
     text-align: left;
     padding-left: 2rem;
     padding-right: 2.2rem;
+    /* padding-bottom: 14rem; */
     font-size: 1.5rem;
     
 }

@@ -4,11 +4,11 @@
 //Katie Greenwald 
 
 import {createSlice} from '@reduxjs/toolkit';
-import data from '../App/components/data';
+
 
 let comments =[];
 let storedComments = JSON.parse(localStorage.getItem("storedComments"));
-storedComments ? comments = storedComments :  comments = data; 
+if (storedComments) comments = storedComments; 
 
 export const commentSlice = createSlice ({
     name: 'comments',

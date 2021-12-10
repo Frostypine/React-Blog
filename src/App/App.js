@@ -23,7 +23,9 @@ const App = () => {
       </header>  
       <ScrollToTop smooth />
        <Main/>
-       <br/><br/><br/><br/>
+       <br/><br/><br/><br/>  <br />       <br/><br/><br/><br/>  <br />
+            <br />  <br />
+            <br />
        <Footer/>
     </div>
   );        
