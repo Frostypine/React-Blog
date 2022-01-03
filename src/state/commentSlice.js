@@ -2,13 +2,16 @@
 //React Blog Assignment 
 //Array Bootcamp Fall 2021
 //Katie Greenwald 
-
 import {createSlice} from '@reduxjs/toolkit';
 import data from '../App/components/data';
 
 let comments =[];
 let storedComments = JSON.parse(localStorage.getItem("storedComments"));
-storedComments ? comments = storedComments :  comments = data; 
+if (storedComments) comments = storedComments; 
+if(!comments) {
+comments = data; 
+  localStorage.setItem("comments", JSON.stringify(comments))
+}
 
 export const commentSlice = createSlice ({
     name: 'comments',

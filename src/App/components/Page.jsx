@@ -23,7 +23,7 @@ post={info[0].body}
 text={info[0].text} 
 />*/}
 <PageContent />
-
+<Comments />
 
     <br/><br/><br/><br/>
     </div>);
