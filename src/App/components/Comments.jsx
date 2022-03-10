@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './Components.css';
-import { Container, Button, Form, Accordion, Card } from 'react-bootstrap';
+import { Container, Button, Form,  Card } from 'react-bootstrap';
 import { useDispatch,useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { addComments, selectComments } from '../../state/commentSlice';
@@ -11,6 +11,7 @@ const Comments = () => {
 
     const dispatch = useDispatch(); 
     const commentList = useSelector(selectComments); // get list of comments from redux
+    console.log(commentList)
     const storeCommentList = () => dispatch(addComments([...commentList, comment]));
   // local state (component and children)
   const [comment, setComment] = useState({}); 
@@ -39,14 +40,14 @@ const Comments = () => {
    }
 
     return (
-        <div>
+        
         <Container className='commentForm'>
-            <Accordion>
+            <div>
                 
-              <Accordion.Header>
+              <div>
                   Leave a comment: 
-              </Accordion.Header>
-              <Accordion.Item eventKey="e">
+              </div>
+              <div eventKey="e">
               <Form onSubmit={onSubmit}>
                 <Form.Group className ="mb-3" controlId='exampleForm.ControlInput1'>
                       <Form.Control name="name" placeholder="name" onChange={updateField}/>   
@@ -57,9 +58,9 @@ const Comments = () => {
                 
                    <Button type="Submit">Submit</Button>
               </Form>
-                </Accordion.Item>
+                </div>
 
- <Accordion.Item className="commentBox">
+ <div className="commentBox">
         {commentList.map((entry,i) => {
             if (entry.index === index){// this is to make sure the comments only land on the correct blog
             // 
@@ -74,10 +75,10 @@ const Comments = () => {
     
         )  }}
         )}
- </Accordion.Item>            
- </Accordion>
+ </ div>            
+ </div>
     </Container>
-        </div>
+       
     )
 }
 export default Comments; 
