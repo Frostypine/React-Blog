@@ -2,35 +2,34 @@
 //React Blog Assignment 
 //Array Bootcamp Fall 2021
 //Katie Greenwald 
-import {createSlice} from '@reduxjs/toolkit';
-import data from '../App/components/data';
+import { createSlice } from "@reduxjs/toolkit";
 
-let comments =[];
-let storedComments = JSON.parse(localStorage.getItem("storedComments"));
-if (storedComments) comments = storedComments; 
-if(!comments) {
-comments = data; 
-  localStorage.setItem("comments", JSON.stringify(comments))
-}
+let comments = [];
 
-export const commentSlice = createSlice ({
-    name: 'comments',
-    initialState: {
-      comments:   comments
+export const commentSlice = createSlice({
+  name: "comments",
+  initialState: {
+  comments: comments,
+  },
+  reducers: {
+    allComments: (state, action) => {
+      state.comments = action.payload;
     },
-    reducers: {
-       addComments: (state, action) => {
-        console.log(action.payload); 
-        state.comments = action.payload;
-        localStorage.setItem('storedComments', JSON.stringify(state.comments));
+    addComments: (state, action) => {
+      state.comments.push(action.payload);
     },
-    deleteComments: (state,action) => {
-      state.comments.splice(action.payload, 1)
-      localStorage.setItem("storedComments",JSON.stringify(state.comments))
-    }
-  }
-})
+    editComment: (state, action) => {},
+    addCommentMessages: (state, action) => {
+      const index = state.comments.findIndex((e) => e._id === action.payload._id);
+      state.comments[index].messages = action.payload.messages;
+    },
 
-export const {addComments,deleteComments} = commentSlice.actions;
+    removeComment: (state, action) => {
+      state.comments.splice(state.comments.findIndex((e) => e._id === action.payload, 1));
+    },
+  },
+});
+
+export const { allComments, addComments, addCommentMessages, removeComment } = commentSlice.actions;
 export const selectComments = (state) => state.comments.comments;
-export default commentSlice.reducer; 
+export default commentSlice.reducer;

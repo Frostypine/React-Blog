@@ -10,6 +10,6 @@ import commentReducer from '../commentSlice';
 export const store = configureStore({
     reducer:{
         content: contentReducer,
-        comment: commentReducer,
+        comments: commentReducer,
     }
 });
