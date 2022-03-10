@@ -3,8 +3,12 @@
    Array Bootcamp Fall 2021
    Katie Greenwald 
 */
-
-
+.commentBox{
+    background-color: white;
+}
+.commentForm{
+    z-index: 2;
+}
 .par-box{
     height: 12rem; 
     overflow: scroll;
