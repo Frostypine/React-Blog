@@ -8,6 +8,7 @@ import Main from  './components/Main';
 import ANav from  './components/ANav';
 import ScrollToTop from "react-scroll-to-top";
 import Footer from './components/Footer';
+
  //import {Container, Row, Col} from 'react-bootstrap'; 
 
 const App = () => {

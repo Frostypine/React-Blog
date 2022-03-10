@@ -7,6 +7,7 @@ import './Components.css';
 import ArticleHeader from './ArticleHeader';
 //import Page1Content from '../../../rnd/Page1Content';
 import PageContent from './PageContent';
+import Comments from './Comments'; 
 
 //import info from './data';
 
@@ -22,7 +23,7 @@ post={info[0].body}
 text={info[0].text} 
 />*/}
 <PageContent />
-
+<Comments />
 
     <br/><br/><br/><br/>
     </div>);
